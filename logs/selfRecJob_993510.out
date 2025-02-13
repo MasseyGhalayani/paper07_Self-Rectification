@@ -1,0 +1,48 @@
+### Starting TaskPrologue of job 993510 on tg090 at Wed 12 Feb 2025 11:53:59 PM CET
+Running on cores 64-95 with governor ondemand
+Wed Feb 12 23:53:59 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   36C    P0             56W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[07;1;31;43m WARNING: You are over quota on at least one filesystem![0m
+    Path              Used     SoftQ    HardQ    Gracetime  Filecount  FileQuota  FileHardQ  FileGrace    
+[07;1;31;43m!!! /home/hpc          124.1G   104.9G   209.7G  -29572days     210K     500K   1,000K        N/A !!![0m
+=== JOB_STATISTICS ===
+=== current date     : Wed 12 Feb 2025 11:54:15 PM CET
+= Job-ID             : 993510 on tinygpu
+= Job-Name           : selfRecJob
+= Job-Command        : /home/hpc/mrrr/mrrr120v/paper07_Self-Rectification/job.sbatch
+= Initial workdir    : /home/hpc/mrrr/mrrr120v/paper07_Self-Rectification
+= Queue/Partition    : a100
+= Slurm account      : mrrr with QOS=normal
+= Requested resources:  for 06:00:00
+= Elapsed runtime    : 00:00:18
+= Total RAM usage    : 0.0 GiB of requested  GiB (%)   
+= Node list          : tg090
+= Subm/Elig/Start/End: 2025-02-12T23:53:56 / 2025-02-12T23:53:56 / 2025-02-12T23:53:57 / 2025-02-12T23:54:15
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+!!! /home/hpc          124.1G   104.9G   209.7G  -29572days     210K     500K   1,000K        N/A !!!
+    /home/woody          0.0K  1000.0G  1500.0G        N/A       1    5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

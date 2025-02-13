@@ -1,0 +1,88 @@
+### Starting TaskPrologue of job 993706 on tg093 at Thu 13 Feb 2025 06:04:47 PM CET
+Running on cores 0-31 with governor ondemand
+Thu Feb 13 18:04:47 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   34C    P0             57W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+[07;1;31;43m WARNING: You are over quota on at least one filesystem![0m
+    Path              Used     SoftQ    HardQ    Gracetime  Filecount  FileQuota  FileHardQ  FileGrace    
+[07;1;31;43m!!! /home/hpc          129.6G   104.9G   209.7G  -29572days     213K     500K   1,000K        N/A !!![0m
+input text embeddings : torch.Size([1, 77, 768])
+latents shape:  torch.Size([1, 4, 64, 64])
+Valid timesteps:  tensor([  1,  21,  41,  61,  81, 101, 121, 141, 161, 181, 201, 221, 241, 261,
+        281, 301, 321, 341, 361, 381, 401, 421, 441, 461, 481, 501, 521, 541,
+        561, 581, 601, 621, 641, 661, 681, 701, 721, 741, 761, 781, 801, 821,
+        841, 861, 881, 901, 921, 941, 961, 981])
+input text embeddings : torch.Size([1, 77, 768])
+latents shape:  torch.Size([1, 4, 64, 64])
+Valid timesteps:  tensor([  1,  21,  41,  61,  81, 101, 121, 141, 161, 181, 201, 221, 241, 261,
+        281, 301, 321, 341, 361, 381, 401, 421, 441, 461, 481, 501, 521, 541,
+        561, 581, 601, 621, 641, 661, 681, 701, 721, 741, 761, 781, 801, 821,
+        841, 861, 881, 901, 921, 941, 961, 981])
+MasaCtrl at denoising steps:  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+MasaCtrl at U-Net layers:  [10, 11, 12, 13, 14, 15]
+ref_num =  1
+input text embeddings : torch.Size([1, 77, 768])
+latents shape:  torch.Size([1, 4, 64, 64])
+Valid timesteps:  tensor([  1,  21,  41,  61,  81, 101, 121, 141, 161, 181, 201, 221, 241, 261,
+        281, 301, 321, 341, 361, 381, 401, 421, 441, 461, 481, 501, 521, 541,
+        561, 581, 601, 621, 641, 661, 681, 701, 721, 741, 761, 781, 801, 821,
+        841, 861, 881, 901, 921, 941, 961, 981])
+MasaCtrl at denoising steps:  [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+MasaCtrl at U-Net layers:  [10, 11, 12, 13, 14, 15]
+ref_num =  1
+input text embeddings : torch.Size([2, 77, 768])
+MasaCtrl at denoising steps:  [0, 1, 2, 3, 4]
+MasaCtrl at U-Net layers:  [10, 11, 12, 13, 14, 15]
+ref_num =  1
+input text embeddings : torch.Size([1, 77, 768])
+latents shape:  torch.Size([1, 4, 64, 64])
+Valid timesteps:  tensor([  1,  21,  41,  61,  81, 101, 121, 141, 161, 181, 201, 221, 241, 261,
+        281, 301, 321, 341, 361, 381, 401, 421, 441, 461, 481, 501, 521, 541,
+        561, 581, 601, 621, 641, 661, 681, 701, 721, 741, 761, 781, 801, 821,
+        841, 861, 881, 901, 921, 941, 961, 981])
+MasaCtrl at denoising steps:  [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+MasaCtrl at U-Net layers:  [10, 11, 12, 13, 14, 15]
+ref_num =  1
+input text embeddings : torch.Size([2, 77, 768])
+Syntheiszed images are saved in ./workdir/exp/Sample_6
+=== JOB_STATISTICS ===
+=== current date     : Thu 13 Feb 2025 06:06:06 PM CET
+= Job-ID             : 993706 on tinygpu
+= Job-Name           : selfRecJob
+= Job-Command        : /home/hpc/mrrr/mrrr120v/paper07_Self-Rectification/job.sbatch
+= Initial workdir    : /home/hpc/mrrr/mrrr120v/paper07_Self-Rectification
+= Queue/Partition    : a100
+= Slurm account      : mrrr with QOS=normal
+= Requested resources:  for 06:00:00
+= Elapsed runtime    : 00:01:42
+= Total RAM usage    : 2.4 GiB of requested  GiB (%)   
+= Node list          : tg093
+= Subm/Elig/Start/End: 2025-02-13T18:04:21 / 2025-02-13T18:04:21 / 2025-02-13T18:04:22 / 2025-02-13T18:06:04
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+!!! /home/hpc          129.6G   104.9G   209.7G  -29572days     213K     500K   1,000K        N/A !!!
+    /home/woody          0.0K  1000.0G  1500.0G        N/A       1    5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A100-SXM4-40GB, 00000000:01:00.0, 22308, 38 %, 15 %, 9790 MiB, 68454 ms
