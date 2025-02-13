@@ -27,8 +27,8 @@ def load_image(image_path, res, device):
 # ================================== change config here! ========================================
 P1 = 20
 P2 = 5
-S1 = 20
-S2 = 5
+S1 = 30
+S2 = 10
 
 ref_images = torch.cat([
     load_image('./images/refs/5002.jpg', 512, device),
