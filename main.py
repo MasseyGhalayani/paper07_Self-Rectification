@@ -31,12 +31,12 @@ S1 = 20
 S2 = 5
 
 ref_images = torch.cat([
-    load_image('./images/refs/5001.jpg', 512, device),
+    load_image('./images/refs/5002.jpg', 512, device),
     # load_image('./images/aug/203-1.jpg', 512, device),
     # load_image('./images/aug/203-2.jpg', 512, device),
     # load_image('./images/aug/203-3.jpg', 512, device)
 ])
-target_image = load_image('./images/tgts/5001-1.jpg', 512, device)
+target_image = load_image('./images/tgts/5002-1.jpg', 512, device)
 
 out_dir = "./workdir/exp/"
 # ================================== config end ========================================
