@@ -1,5 +1,6 @@
 diffusers==0.15.0
 transformers
+huggingface_hub==0.24.0
 opencv-python
 einops
 omegaconf
